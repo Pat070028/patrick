@@ -10,8 +10,7 @@
 .main-container{
     position: relative;
     background-image: linear-gradient(to bottom,black,black,gray);
-    width: 100%;
-    height: 100%;
+  
     display: flex;
 }
 
@@ -292,6 +291,11 @@
 @media only screen and (max-width:1440px)
 {
 
+    .main-container{
+
+        max-width: 1440px;
+    }
+
     .bio img{
 
         padding-top: 200px;
@@ -305,7 +309,7 @@
 @media only screen and (max-width:1024px)
 {
     .main-container img{
-        width: 100%;
+        max-width: 1024px;
         padding-top: 19.3%;
        
     }
@@ -313,7 +317,7 @@
    
     .main-container img{
 
-        width: 100%;
+        width: 400%;
        
     }
 
@@ -321,6 +325,22 @@
 
         width: 40%;
     }
+
+    .content img{
+
+
+        width:100%;
+        position: relative;
+        right: 70px;
+        top:30px;
+      
+    }
+
+    .gallery-container{
+
+        padding-right: 20px;
+    }
+ 
 
 
     .bio {
@@ -377,20 +397,18 @@
 
         .main-container{
 
+         
             width: 120%;
-            background-color: black;
-            height: 100%;
-           
-          
+        
+        
         }
-     
-
 
         .main-container img{
+         
+            position: relative;
+          
 
-            height: 100%;
-           
-            margin-top: 90px;
+            
             
         }
         .main-container .btn{
@@ -409,12 +427,11 @@
             line-height: 90px;
             padding-top: 10px;
         }
-
+       
         .content img{
 
             width: 140%;
             padding-top: 190px;
-            position: relative;
             right: 80px;
           
         }
@@ -423,6 +440,44 @@
 
             background-color: rgb(32, 30, 30);
             width: 120%;
+        }
+
+        .gallery-container{
+
+          display: block;
+         
+         
+        }
+
+        .gallery-container > div{
+    
+
+
+            padding-left: 205px;
+        }
+        .gallery-container img{
+
+            width: 90%;
+      
+        
+        }
+
+        .gallery-container button{
+
+            height: 25px;
+            font-size: 90px;
+            width: 20%;
+        }
+
+        .gallery-container h3{
+
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .gallery-container button{
+            flex-basis: 15%;
+            font-size: 60%;
         }
 
 
@@ -436,21 +491,252 @@
 
         }
 
+        .contact-container img{
+
+            padding-top: 90px;
+        }
+
+        .contact-container button{
+
+            width: 25%;
+            font-size: 90%;
+        }
+
         
     }
 
+    @media only screen and (max-width:425px){
+
+        .main-container{
+        
+            width: 250%;
+      
+        }
+
+        .main-container img{
+
+            width: 60%;
+        }
+        .section{
+
+           font-size: 90%;
+           width: 205;
+        }
+        
+        .section h1{
+
+            font-size: 500%;
+        }
+
+        .section .btn{
+
+            width: 40%;
+            font-size: 140%;
+        }
+
+        .content img{
+
+            width: 400%;
+            position: relative;
+            right: 20px;
+
+        }
+
+      .content section p{
+
+            font-size: 140%;
+        }
+
+        .bio{
+
+            width: 250%;
+            font-size: 130%;
 
 
-    @media only screen and (max-width:320px) {
+        }
+        .bio img{
+
+            position: relative;
+            bottom: 30px;
+        }
+
+        .gallery-container{
+
+            width: 200%;
+        }
+
+        .contact-container{
+
+            width: 250%;
+
+        }
+        
+
+    }
+
+    @media only screen and (max-width:375px){
 
         .main-container{
 
-            background-color: black;
+            width: 250%;
+
+        }
+
+        .main-container img{
+
+            width: 190%;
+        }
+
+        .section{
+
+            font-size: 80%;
+        }
+
+        .main-container .btn{
+
+            width: 60%;
+            font-size: 150%;
+            height: 40px;
+        }
+
+        .content img{
+
+            position: relative;
+            top: 40px;
+            right: 50px;
+        }
+
+        .bio img{
+
+            opacity: 0;
+         
+        }
+
+        .bio h5{
+            
+            position: relative;
+            right: 95%;
+            font-size: 190%;
+        }
+
+        .bio p{
+
+            position: relative;
+            right: 95%;
+            font-size: 120%;
+            line-height: 30px;
+        }
+
+        .gallery-container{
+
+            width: 250%;
+            padding-right: 50%;
+            font-size: 150%;
+           
+        }
+        .gallery-container button{
+
+            width: 40%;
+            font-size: 80%;
+            height: 40px;
+           
+        }
+
+    }
+    
+    @media only screen and (max-width:320px){
+
+        .main-container{
+
             width: 300%;
         }
-    
+        .main-container .section{
+
+            font-size: 100%;
+        }
+
+        .main-container h1{
+
+            font-size: 500%;
+        }
+
+        .main-container .btn{
+
+            font-size: 150%;
+            width: 60%;
+        }
+
+        .content img{
+
+            position: relative;
+            right: 50px;
+        }
+
+        .bio{
+            width: 300%;
+            font-size: 150%;
+
+        
+        }
+
+        .gallery-container{
+
+            width: 300%;
+        }
+        .gallery-container p{
+
+            font-size: 150%;
+        }
+
+        .gallery-container h3{
+
+            font-size: 150%;
+        }
+
+        .gallery-container button{
+
+            width: 30%;
+            height: 40px;
+            font-size: 100%;
+        }
+
+        .contact-container{
+           
+            width: 300%;
+        }
+
+        .contact-container h3{
+            font-size: 180%;
+
+        }
+
+        .contact-container h4{
+
+            line-height: 50px;
+            font-size: 180%;
+        }
+
+        .contact-container p{
+
+            font-size: 130%;
+            line-height: 30px;
+        }
+        .contact-container button{
+
+            width: 40%;
+            font-size: 150%;
+            height: 40px;
+        }
+
+       
+
         
     }
+    
+
+
+
+  
 
 
 
